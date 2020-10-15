@@ -1,0 +1,80 @@
+* {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.main_container {
+    /* px is not responsive */
+    /* vw - viewport width */
+    /* vh - viewport height */
+    /* 900px - 9vh/ vw */
+    /* 750px - 7.5vh/ vw */
+    height: 100vh;
+    width: 100vw;
+    background-image: url("space.jpg");
+    /* background-position: 20% 100%; - x / y axis - move image to the left/ right, or top/bottom */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(50, 50, 212); */
+    position: relative;
+}
+
+h2 {
+    /* margin-top: 4vw;
+    margin-left: 4vw; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    color: #fff;
+}
+
+#arrow {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 3vw;
+    color: #fff;
+}
+
+#yt_button {
+    position: fixed;
+    left: 5%;
+    bottom: 5%;
+    color: #fff;
+    /* text-decoration: none; - removes the underline of the a tags */
+    text-decoration: none;
+}
+
+ul {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* li {
+    display: inline;
+} */
+
+#logo {
+    float: left;
+}
+
+li {
+    /* if float inside position absolute
+    elements, it will be ignored */
+    float: right;
+    padding-right: 2vw;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    padding: 20px 10px;
+    text-decoration: none;
+    /* text-align: center; */
+}
